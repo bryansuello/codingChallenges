@@ -1,10 +1,10 @@
-let theName = 'hanna marie quiamco suello';
+let theName = 'bryan suello';
 
 function abbrevName(name) {
   return name
     .toUpperCase()
     .split(' ')
-    .map(x => {
+    .map((x) => {
       return x.charAt(0);
     })
     .join('.');
