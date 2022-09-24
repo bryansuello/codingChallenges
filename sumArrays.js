@@ -29,3 +29,23 @@ let red = numbers.reduce((total, num) => {
 
 console.log(numbers);
 console.log(red);
+
+// sum = numbers => numbers.reduce((total, num) => total + num, 0)
+
+// sum = function (numbers) {
+//   "use strict";
+//   return numbers.reduce(function(t, n){
+//     return t + n;
+//   }, 0);
+// };
+
+// sum = function (numbers) {
+//   "use strict";
+//   var total = 0;
+//   for(var i = 0; i < numbers.length; i++) {
+//     total += numbers[i];
+//   }
+//   return total;
+// };
+
+// const sum = n => n.reduce((a,b) => a+b, 0);
