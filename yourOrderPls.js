@@ -19,7 +19,7 @@ function order(words) {
   let sort = [];
   for (let i = 1; i <= split.length; i++) {
     sort.push(
-      split.filter(f => {
+      split.filter((f) => {
         return f.includes(i);
       })
     );
