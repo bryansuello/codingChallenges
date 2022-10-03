@@ -7,11 +7,11 @@ let string = 'This website is for losers LOL!';
 function disemvowel(str) {
   return str
     .split('')
-    .filter(m => m != 'a')
-    .filter(m => m != 'e')
-    .filter(m => m != 'i')
-    .filter(m => m != 'o')
-    .filter(m => m != 'u')
+        .filter(m => m != 'a')
+        .filter(m => m != 'e')
+        .filter(m => m != 'i')
+        .filter(m => m != 'o')
+        .filter(m => m != 'u')
     .filter(m => m != 'A')
     .filter(m => m != 'E')
     .filter(m => m != 'I')
