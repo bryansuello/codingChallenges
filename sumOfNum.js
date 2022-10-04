@@ -11,17 +11,20 @@
 // (-1, 0) --> -1 (-1 + 0 = -1)
 // (-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
 
-let a = -1;
+let a = 1;
 let b = 0;
 
 function getSum(a, b) {
-  if (a === b) {
-    return a;
-  } else {
-    for (let i = a; i <= b; i++) {
-      return (i += i);
-    }
+  let getNums = `${a}, ${b}`;
+  getNums.split('');
+  console.log(getNums);
+  console.log(typeof getNums);
+  let newArr = [];
+  for (let i = a; i <= b; i++) {
+    newArr.push(i);
   }
+  console.log(newArr);
+  return newArr.reduce((prev, curr) => prev + curr, 0);
 }
 
 console.log(getSum(a, b));
