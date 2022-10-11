@@ -31,30 +31,30 @@ let language = 'tagalog';
 console.log(typeof language);
 
 function greet(language) {
-  let langList = {
-    english: 'Welcome',
-    czech: 'Vitejte',
-    danish: 'Velkomst',
-    dutch: 'Welkom',
-    estonian: 'Tere tulemast',
-    finnish: 'Tervetuloa',
-    flemish: 'Welgekomen',
-    french: 'Bienvenue',
-    german: 'Willkommen',
-    irish: 'Failte',
-    italian: 'Benvenuto',
-    latvian: 'Gaidits',
-    lithuanian: 'Laukiamas',
-    polish: 'Witamy',
-    spanish: 'Bienvenido',
-    swedish: 'Valkommen',
-    welsh: 'Croeso',
-  };
-  if (language in langList) {
-    return langList[language];
-  } else {
-    return langList.english;
-  }
+    let langList = {
+        english: 'Welcome',
+        czech: 'Vitejte',
+        danish: 'Velkomst',
+        dutch: 'Welkom',
+        estonian: 'Tere tulemast',
+        finnish: 'Tervetuloa',
+        flemish: 'Welgekomen',
+        french: 'Bienvenue',
+        german: 'Willkommen',
+        irish: 'Failte',
+        italian: 'Benvenuto',
+        latvian: 'Gaidits',
+        lithuanian: 'Laukiamas',
+        polish: 'Witamy',
+        spanish: 'Bienvenido',
+        swedish: 'Valkommen',
+        welsh: 'Croeso',
+    };
+    if (language in langList) {
+        return langList[language];
+    } else {
+        return langList.english;
+    }
 }
 
 console.log(greet(language));

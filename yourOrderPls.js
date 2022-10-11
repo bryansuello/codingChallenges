@@ -14,18 +14,18 @@
 let str = 'is2 Thi1s T4est 3a';
 
 function order(words) {
-  let split = words.split(' ');
-  console.log(split);
-  let sort = [];
-  for (let i = 1; i <= split.length; i++) {
-    sort.push(
-      split.filter((f) => {
-        return f.includes(i);
-      })
-    );
-  }
-  let string = sort.join(' ');
-  return string;
+    let split = words.split(' ');
+    console.log(split);
+    let sort = [];
+    for (let i = 1; i <= split.length; i++) {
+        sort.push(
+            split.filter(f => {
+                return f.includes(i);
+            }),
+        );
+    }
+    let string = sort.join(' ');
+    return string;
 }
 
 console.log(order(str));
